@@ -25,9 +25,6 @@ For inquiries or permissions, contact daniel@section.store
   assign content_width = section.settings.content_width
   assign lazy = section.settings.lazy
 
-  assign content_align = section.settings.content_align
-  assign content_align_mobile = section.settings.content_align_mobile
-
   assign heading = section.settings.heading
   assign heading_size = section.settings.heading_size
   assign heading_size_mobile = section.settings.heading_size_mobile
@@ -35,6 +32,7 @@ For inquiries or permissions, contact daniel@section.store
   assign heading_custom = section.settings.heading_custom
   assign heading_font = section.settings.heading_font
   assign heading_height = section.settings.heading_height
+  assign heading_align = section.settings.heading_align
 
   assign rating_text = section.settings.rating_text
   assign rating_text_size = section.settings.rating_text_size
@@ -44,12 +42,13 @@ For inquiries or permissions, contact daniel@section.store
   assign rating_text_font = section.settings.rating_text_font
   assign rating_text_height = section.settings.rating_text_height
   assign rating_text_mt = section.settings.rating_text_mt
-  assign rating_text_mt_mobile = section.settings.rating_text_mt_mobile
   assign rating_text_hide = section.settings.rating_text_hide
 
   assign rating_hide = section.settings.rating_hide
   assign rating = section.settings.rating
+  assign rating_align = section.settings.rating_align
 
+  assign stars_align = section.settings.stars_align
   assign stars_icon = section.settings.stars_icon
   assign stars_color = section.settings.stars_color
   assign stars_bg_color = section.settings.stars_bg_color
@@ -64,23 +63,17 @@ For inquiries or permissions, contact daniel@section.store
   assign text_custom = section.settings.text_custom
   assign text_font = section.settings.text_font
   assign text_height = section.settings.text_height
+  assign text_align = section.settings.text_align
   assign text_mt = section.settings.text_mt
-  assign text_mt_mobile = section.settings.text_mt_mobile
   assign text_right_image = section.settings.text_right_image
 
-  assign scrolling_velocity = section.settings.scrolling_velocity
-  assign scrolling_velocity_mobile = section.settings.scrolling_velocity_mobile
+  assign slider_width = section.settings.slider_width
+  assign slider_view = section.settings.slider_view
+  assign slider_view_mobile = section.settings.slider_view_mobile
+  assign slider_gap = section.settings.slider_gap
+  assign slider_gap_mobile = section.settings.slider_gap_mobile
+  assign slider_mt = section.settings.slider_mt
 
-  assign reverse_direction = section.settings.reverse_direction
-  assign pause_hover = section.settings.pause_hover
-
-  assign scrolling_mt = section.settings.scrolling_mt
-  assign scrolling_mt_mobile = section.settings.scrolling_mt_mobile
-  assign scrolling_gap = section.settings.scrolling_gap
-  assign scrolling_gap_mobile = section.settings.scrolling_gap_mobile
-
-  assign card_width = section.settings.card_width
-  assign card_width_mobile = section.settings.card_width_mobile
   assign card_padding_vertical = section.settings.card_padding_vertical
   assign card_padding_vertical_mobile = section.settings.card_padding_vertical_mobile
   assign card_padding_horizontal = section.settings.card_padding_horizontal
@@ -89,10 +82,8 @@ For inquiries or permissions, contact daniel@section.store
   assign card_border_thickness = section.settings.card_border_thickness
   assign card_border_color = section.settings.card_border_color
   assign card_bg_color = section.settings.card_bg_color
-  assign card_shadow_style = section.settings.card_shadow_style
-  assign card_height = section.settings.card_height
-  assign card_content_align = section.settings.card_content_align
-  assign card_content_align_mobile = section.settings.card_content_align_mobile
+  assign card_shadow = section.settings.card_shadow
+  assign card_shadow_color = section.settings.card_shadow_color
 
   assign card_heading_size = section.settings.card_heading_size
   assign card_heading_size_mobile = section.settings.card_heading_size_mobile
@@ -100,8 +91,8 @@ For inquiries or permissions, contact daniel@section.store
   assign card_heading_custom = section.settings.card_heading_custom
   assign card_heading_font = section.settings.card_heading_font
   assign card_heading_height = section.settings.card_heading_height
+  assign card_heading_align = section.settings.card_heading_align
   assign card_heading_mt = section.settings.card_heading_mt
-  assign card_heading_mt_mobile = section.settings.card_heading_mt_mobile
 
   assign card_text_size = section.settings.card_text_size
   assign card_text_size_mobile = section.settings.card_text_size_mobile
@@ -109,8 +100,8 @@ For inquiries or permissions, contact daniel@section.store
   assign card_text_custom = section.settings.card_text_custom
   assign card_text_font = section.settings.card_text_font
   assign card_text_height = section.settings.card_text_height
+  assign card_text_align = section.settings.card_text_align
   assign card_text_mt = section.settings.card_text_mt
-  assign card_text_mt_mobile = section.settings.card_text_mt_mobile
   assign card_text_more = section.settings.card_text_more
   assign card_text_less = section.settings.card_text_less
   assign card_count_words = section.settings.card_count_words
@@ -121,12 +112,31 @@ For inquiries or permissions, contact daniel@section.store
   assign card_author_date_text_custom = section.settings.card_author_date_text_custom
   assign card_author_date_text_font = section.settings.card_author_date_text_font
   assign card_author_date_text_height = section.settings.card_author_date_text_height
+  assign card_author_date_text_align = section.settings.card_author_date_text_align
   assign card_author_date_text_mt = section.settings.card_author_date_text_mt
-  assign card_author_date_text_mt_mobile = section.settings.card_author_date_text_mt_mobile
 
-  assign author_image_size = section.settings.author_image_size
-  assign author_image_size_mobile = section.settings.author_image_size_mobile
-  assign author_image_position = section.settings.author_image_position
+  assign arrow_size = section.settings.arrow_size
+  assign arrow_size_mobile = section.settings.arrow_size_mobile
+  assign arrow_icon_size = section.settings.arrow_icon_size
+  assign arrow_icon_size_mobile = section.settings.arrow_icon_size_mobile
+  assign arrow_color = section.settings.arrow_color
+  assign arrow_hover_color = section.settings.arrow_hover_color
+  assign arrow_bg_color = section.settings.arrow_bg_color
+  assign arrow_bg_hover_color = section.settings.arrow_bg_hover_color
+  assign arrow_border_thickness = section.settings.arrow_border_thickness
+  assign arrow_border_color = section.settings.arrow_border_color
+  assign arrow_border_hover_color = section.settings.arrow_border_hover_color
+  assign arrow_show_desktop = section.settings.arrow_show_desktop
+  assign arrow_show_mobile = section.settings.arrow_show_mobile
+
+  assign dots_size = section.settings.dots_size
+  assign dots_size_mobile = section.settings.dots_size_mobile
+  assign dots_show_desktop = section.settings.dots_show_desktop
+  assign dots_show_mobile = section.settings.dots_show_mobile
+  assign dots_color = section.settings.dots_color
+
+  assign size = slider_view | modulo: 2
+  assign size_tablet = slider_view | times: 0.5 | round: 0 | modulo: 2
 
   assign button = section.settings.button
   assign button_size = section.settings.button_size
@@ -137,23 +147,16 @@ For inquiries or permissions, contact daniel@section.store
   assign button_font = section.settings.button_font
   assign button_height = section.settings.button_height
   assign button_align = section.settings.button_align
-  assign button_align_mobile = section.settings.button_align_mobile
   assign button_url = section.settings.button_url
   assign button_mt = section.settings.button_mt
-  assign button_mt_mobile = section.settings.button_mt_mobile
   assign button_padding_vertical = section.settings.button_padding_vertical
   assign button_padding_horizontal = section.settings.button_padding_horizontal
-  assign button_padding_vertical_mobile = section.settings.button_padding_vertical_mobile
-  assign button_padding_horizontal_mobile = section.settings.button_padding_horizontal_mobile
   assign button_radius = section.settings.button_radius
   assign button_border_thickness = section.settings.button_border_thickness
   assign button_border_color = section.settings.button_border_color
   assign button_border_hover_color = section.settings.button_border_hover_color
   assign button_bg_color = section.settings.button_bg_color
   assign button_bg_hover_color = section.settings.button_bg_hover_color
-  assign button_style = section.settings.button_style
-
-  assign view_color = section.settings.view_color
   
 -%}
 
@@ -188,7 +191,7 @@ For inquiries or permissions, contact daniel@section.store
     font-size: {{ heading_size_mobile }}px;
     color: {{ heading_color }};
     line-height: {{ heading_height }}%;
-    text-align: {{ content_align_mobile }};
+    text-align: {{ heading_align }};
     text-transform: unset;
   }
 
@@ -211,9 +214,10 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-rating-{{ section.id }} {
-    margin-top: {{ rating_text_mt_mobile }}px;
+    margin-top: {{ rating_text_mt | times: 0.75 | round: 0 }}px;
     display: flex;
     align-items: center;
+    justify-content: {{ rating_align }};
     gap: 5px;
     flex-wrap: wrap;
   }
@@ -236,9 +240,10 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-text-{{ section.id }} {
-    margin-top: {{ text_mt_mobile }}px;
+    margin-top: {{ text_mt | times: 0.75 | round: 0 }}px;
     display: flex;
     align-items: center;
+    justify-content: {{ text_align }};
     gap: 10px;
     flex-wrap: wrap;
   }
@@ -268,44 +273,30 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-slider-wrapper-{{ section.id }} {
-    margin-top: {{ scrolling_mt_mobile }}px;
+    margin-top: {{ slider_mt | times: 0.75 | round: 0 }}px;
   }
 
-  .testimonials-scrolling-wrap-{{ section.id }} {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    background-attachment: scroll !important;
-    transform-origin: center;
-    gap: {{ scrolling_gap_mobile }}px;
-    width: 200vw;
-    left: -100vw;
+  .testimonials-slider-{{ section.id }} {
+    overflow: visible !important;
   }
 
-  .testimonials-scrolling-list-{{ section.id }} {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    background-attachment: scroll !important;
-    -webkit-animation: ticker{{ section.id | replace: '-', '' }} {{ scrolling_velocity_mobile }}s infinite linear;
-    animation: ticker{{ section.id | replace: '-', '' }} {{ scrolling_velocity_mobile }}s infinite linear;
-    flex-shrink: 0;
-    gap: {{ scrolling_gap_mobile }}px;
+  .testimonials-slide-{{ section.id }}.swiper-slide {
+    opacity: 0.5;
+    transition-duration: 250ms;
+    transition-property: transform, opacity;
+  }
+
+  .testimonials-slide-{{ section.id }}.swiper-slide-active {
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-property: transform, opacity;
   }
 
   .testimonials-slide-{{ section.id }} {
-    width: {{ card_width_mobile }}px;
-    background-attachment: scroll !important;
-    flex-shrink: 0;
-    text-decoration: none;
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
-    gap: {{ card_author_date_text_mt_mobile }}px;
+    gap: {{ card_author_date_text_mt | times: 0.75 | round: 0 }}px;
     padding: {{ card_padding_vertical_mobile }}px {{ card_padding_horizontal_mobile }}px;
     border-radius: {{ card_radius }}px;
     border: {{ card_border_thickness }}px solid {{ card_border_color }};
@@ -314,31 +305,28 @@ For inquiries or permissions, contact daniel@section.store
     height: auto !important;
   }
 
-  .testimonials-top-bar-{{ section.id }},
-  .testimonials-slide-top-{{ section.id }},
-  .testimonials-slide-bottom-bar-{{ section.id }} {
-    display: flex;
-    flex-direction: column;
+  .testimonials-slide-top-{{ section.id }} .testimonials-stars-{{ section.id }} {
+    justify-content: {{ stars_align }};
   }
 
   .testimonials-slide-heading-{{ section.id }} {
     margin: 0;
-    margin-top: {{ card_heading_mt_mobile }}px;
+    margin-top: {{ card_heading_mt | times: 0.75 | round: 0 }}px;
     font-size: {{ card_heading_size_mobile }}px;
     color: {{ card_heading_color }};
     line-height: {{ card_heading_height }}%;
-    text-align: {{ card_content_align_mobile }};
+    text-align: {{ card_heading_align }};
     font-weight: 700;
     text-transform: unset;
   }
 
   .testimonials-slide-text-{{ section.id }} {
     margin: 0;
-    margin-top: {{ card_text_mt_mobile }}px;
+    margin-top: {{ card_text_mt | times: 0.75 | round: 0 }}px;
     font-size: {{ card_text_size_mobile }}px;
     color: {{ card_text_color }};
     line-height: {{ card_text_height }}%;
-    text-align: {{ card_content_align_mobile }};
+    text-align: {{ card_text_align }};
     text-transform: unset;
   }
 
@@ -369,32 +357,102 @@ For inquiries or permissions, contact daniel@section.store
     line-height: {{ card_text_height }}%;
     font-weight: 700;
     margin-top: 10px;
-    color: {{ view_color }};
   }
-
-  .testimonials-slide-bottom-{{ section.id }} {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .testimonials-slide-bottom-{{ section.id }} img,
-  .testimonials-slide-image-{{ section.id }} img {
-    width: {{ author_image_size_mobile }}px;
-    height: {{ author_image_size_mobile }}px;
-    display: block;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
 
   .testimonials-slide-author-date-{{ section.id }} {
     margin: 0;
     font-size: {{ card_author_date_text_size_mobile }}px;
     color: {{ card_author_date_text_color }};
     line-height: {{ card_author_date_text_height }}%;
-    text-align: {{ card_content_align_mobile }};
+    text-align: {{ card_author_date_text_align }};
     text-transform: unset;
+  }
+
+  .testimonials-btn-prev-{{ section.id }},
+  .testimonials-btn-next-{{ section.id }} {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: {{ arrow_size_mobile }}px;
+    height: {{ arrow_size_mobile }}px;
+    border: {{ arrow_border_thickness }}px solid {{ arrow_border_color }};
+    border-radius: 50%;
+    background: {{ arrow_bg_color }};
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.15);
+  }
+
+  .testimonials-btn-prev-{{ section.id }} {
+    left: 0px !important;
+  }
+
+  .testimonials-btn-next-{{ section.id }} {
+    right: 0px !important;
+  }
+
+  .testimonials-btn-prev-{{ section.id }} svg,
+  .testimonials-btn-next-{{ section.id }} svg {
+    height: {{ arrow_icon_size_mobile }}px;
+    width: {{ arrow_icon_size_mobile }}px;
+  }
+
+  .testimonials-btn-next-{{ section.id }} svg {
+    transform: rotate(180deg);
+    margin-left: 2px;
+  }
+
+  .testimonials-btn-prev-{{ section.id }} svg {
+    margin-left: -2px;
+  }
+
+  .testimonials-btn-prev-{{ section.id }} svg path,
+  .testimonials-btn-next-{{ section.id }} svg path {
+    fill: {{ arrow_color }};
+    transition: all 0.3s ease 0s;
+  }
+
+  .testimonials-btn-prev-{{ section.id }}:hover ,
+  .testimonials-btn-next-{{ section.id }}:hover {
+    transition: all 0.3s ease 0s;
+    border: {{ arrow_border_thickness }}px solid {{ arrow_border_hover_color }};
+    background: {{ arrow_bg_hover_color }};
+  }
+
+  .testimonials-btn-prev-{{ section.id }}:hover svg path,
+  .testimonials-btn-next-{{ section.id }}:hover svg path {
+    fill: {{ arrow_hover_color }};
+    transition: all 0.3s ease 0s;
+  }
+
+  .testimonials-btn-prev-{{ section.id }}.swiper-button-disabled,
+  .testimonials-btn-next-{{ section.id }}.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .testimonials-pagination-{{ section.id }} {
+    margin-top: 20px;
+    position: static !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet {
+    width: {{ dots_size_mobile }}px;
+    height: {{ dots_size_mobile }}px;
+    border: 2px solid {{ dots_color }};
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: {{ dots_color }}
   }
 
   .testimonials-btn-{{ section.id }} {
@@ -402,9 +460,8 @@ For inquiries or permissions, contact daniel@section.store
     align-items: center;
     justify-content: center;
     max-width: fit-content;
-    gap: 5px;
     margin: 0;
-    margin-top: {{ button_mt_mobile }}px;
+    margin-top: {{ button_mt | times: 0.75 | round: 0 }}px;
     font-size: {{ button_size_mobile }}px;
     font-weight: 700;
     color: {{ button_color }};
@@ -412,28 +469,17 @@ For inquiries or permissions, contact daniel@section.store
     text-align: center;
     text-transform: unset;
     text-decoration: none;
-    padding: {{ button_padding_vertical_mobile }}px {{ button_padding_horizontal_mobile }}px;
+    padding: {{ button_padding_vertical | times: 0.75 | round: 0 }}px {{ button_padding_horizontal | times: 0.75 | round: 0 }}px;
     border-radius: {{ button_radius }}px;
+    border: {{ button_border_thickness }}px solid {{ button_border_color }};
+    background-color: {{ button_bg_color }};
     transition: all 0.25s ease 0s;
   }
 
   .testimonials-btn-{{ section.id }}:hover {
     color: {{ button_hover_color }};
-    transition: all 0.25s ease 0s;
-  }
-
-  .testimonials-btn-{{ section.id }} svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .testimonials-btn-{{ section.id }} svg path {
-    fill: {{ button_color }};
-    transition: all 0.25s ease 0s;
-  }
-
-  .testimonials-btn-{{ section.id }}:hover svg path {
-    fill: {{ button_hover_color }};
+    border: {{ button_border_thickness }}px solid {{ button_border_hover_color }};
+    background-color: {{ button_bg_hover_color }};
     transition: all 0.25s ease 0s;
   }
   
@@ -454,11 +500,6 @@ For inquiries or permissions, contact daniel@section.store
 
     .testimonials-heading-{{ section.id }} {
       font-size: {{ heading_size }}px;
-      text-align: {{ content_align }};
-    }
-
-    .testimonials-rating-{{ section.id }} {
-      margin-top: {{ rating_text_mt }}px;
     }
 
     .testimonials-rating-text-{{ section.id }},
@@ -485,29 +526,26 @@ For inquiries or permissions, contact daniel@section.store
     }
 
     .testimonials-slider-wrapper-{{ section.id }} {
-      margin-top: {{ scrolling_mt }}px;
-    }
-
-    .testimonials-scrolling-wrap-{{ section.id }} {
-      gap: {{ scrolling_gap }}px;
+      margin-top: {{ slider_mt }}px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: {{ slider_width }}%;
     }
     
     .testimonials-slide-{{ section.id }} {
-      width: {{ card_width }}px;
       gap: {{ card_author_date_text_mt }}px;
       padding: {{ card_padding_vertical }}px {{ card_padding_horizontal }}px;
     }
 
     .testimonials-slide-heading-{{ section.id }} {
       margin-top: {{ card_heading_mt }}px;
-      text-align: {{ card_content_align }};
       font-size: {{ card_heading_size }}px;
     }
 
     .testimonials-slide-text-{{ section.id }} {
       margin-top: {{ card_text_mt }}px;
       font-size: {{ card_text_size }}px;
-      text-align: {{ card_content_align }};
     }
 
     .testimonials-slide-text-btn-{{ section.id }} {
@@ -524,28 +562,38 @@ For inquiries or permissions, contact daniel@section.store
     }
 
     .testimonials-slide-author-date-{{ section.id }} {
-      text-align: {{ card_content_align }};
       font-size: {{ card_author_date_text_size }}px;
+    }
+
+    .testimonials-btn-prev-{{ section.id }},
+    .testimonials-btn-next-{{ section.id }} {
+      width: {{ arrow_size }}px;
+      height: {{ arrow_size }}px;
+    }
+
+    .testimonials-btn-prev-{{ section.id }} {
+      left: -{{ arrow_size | times: 0.5 }}px !important;
+    }
+  
+    .testimonials-btn-next-{{ section.id }} {
+      right: -{{ arrow_size | times: 0.5 }}px !important;
+    }
+
+    .testimonials-btn-prev-{{ section.id }} svg,
+    .testimonials-btn-next-{{ section.id }} svg {
+      height: {{ arrow_icon_size }}px;
+      width: {{ arrow_icon_size }}px;
+    }
+
+    .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet {
+      width: {{ dots_size }}px;
+      height: {{ dots_size }}px;
     }
 
     .testimonials-btn-{{ section.id }} {
       margin-top: {{ button_mt }}px;
       padding: {{ button_padding_vertical }}px {{ button_padding_horizontal }}px;
       font-size: {{ button_size }}px;
-    }
-
-    .testimonials-scrolling-list-{{ section.id }} {
-      animation-duration: {{ scrolling_velocity }}s;
-      gap: {{ scrolling_gap }}px;
-    }
-
-    .testimonials-slide-bottom-{{ section.id }} img {
-      width: {{ author_image_size }}px;
-      height: {{ author_image_size }}px;
-    }
-
-    .testimonials-slide-bottom-{{ section.id }} {
-      align-items: center;
     }
   }
   
@@ -631,278 +679,194 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
-{% if card_shadow_style == "1"  %}
+{% if arrow_show_mobile %}
   <style>
-    .testimonials-slide-{{ section.id }} {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .testimonials-btn-prev-{{ section.id }},
+    .testimonials-btn-next-{{ section.id }} {
+      display: flex;
     }
   </style>
-{% elsif card_shadow_style == "2"  %}
+{% else %}
   <style>
-    .testimonials-slide-{{ section.id }} {
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    }
-  </style>
-{% elsif card_shadow_style == "3"  %}
-  <style>
-    .testimonials-slide-{{ section.id }} {
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    }
-  </style>
-{% elsif card_shadow_style == "4"  %}
-  <style>
-    .testimonials-slide-{{ section.id }} {
-      box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    .testimonials-btn-prev-{{ section.id }},
+    .testimonials-btn-next-{{ section.id }} {
+      display: none;
     }
   </style>
 {% endif %}
 
-{% if content_align_mobile == "center" %}
-  <style>
-   .testimonials-rating-{{ section.id }},
-   .testimonials-text-{{ section.id }} {
-      justify-content: center;
-    } 
-  </style>
-{% elsif content_align_mobile == "right" %}
-  <style>
-   .testimonials-rating-{{ section.id }},
-   .testimonials-text-{{ section.id }}{
-       justify-content: end;
-    } 
-  </style>
-{% endif %}
-
-{% if content_align == "center" %}
+{% if arrow_show_desktop %}
   <style>
     @media(min-width: 1024px) {
-     .testimonials-rating-{{ section.id }},
-   .testimonials-text-{{ section.id }}{
-         justify-content: center;
-      }  
+      .testimonials-btn-prev-{{ section.id }},
+      .testimonials-btn-next-{{ section.id }} {
+        display: flex;
+      }
     }
   </style>
-{% elsif content_align == "right" %}
+{% else %}
   <style>
     @media(min-width: 1024px) {
-     .testimonials-rating-{{ section.id }},
-   .testimonials-text-{{ section.id }}{
-         justify-content: end;
-      } 
-    }
-  </style>
-{% elsif content_align == "left" %}
-  <style>
-    @media(min-width: 1024px) {
-     .testimonials-rating-{{ section.id }},
-   .testimonials-text-{{ section.id }}{
-         justify-content: start;
-      } 
+      .testimonials-btn-prev-{{ section.id }},
+      .testimonials-btn-next-{{ section.id }} {
+        display: none;
+      }
     }
   </style>
 {% endif %}
 
-{% if button_align_mobile == "center" %}
+{% if dots_show_mobile %}
   <style>
-   .testimonials-btn-{{ section.id }} {
+    .testimonials-pagination-{{ section.id }} {
+      display: flex !important;
+    }
+  </style>
+{% else %}
+  <style>
+    .testimonials-pagination-{{ section.id }} {
+      display: none !important;
+    }
+  </style>
+{% endif %}
+
+{% if dots_show_desktop %}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-pagination-{{ section.id }} {
+        display: flex !important;
+      }
+    }
+  </style>
+{% else %}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-pagination-{{ section.id }} {
+        display: none !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if card_shadow %}
+  <style>
+    .testimonials-slide-{{ section.id }} {
+      box-shadow: 0px 0px 20px 0px {{ card_shadow_color | hex_to_rgba: 0.2 }};
+    }
+  </style>
+{% endif %}
+
+{% if card_text_align == "center" %}
+  <style>
+    .testimonials-slide-text-btn-{{ section.id }} {
       margin-left: auto;
       margin-right: auto;
-    } 
+    }
   </style>
-{% elsif button_align_mobile == "right" %}
+{% elsif card_text_align == "right" %}
   <style>
-   .testimonials-btn-{{ section.id }} {
+    .testimonials-slide-text-btn-{{ section.id }} {
       margin-left: auto;
-    } 
+    }
+  </style>
+{% endif %}
+
+{% if size_tablet == 0 %}
+  <style>
+    @media(min-width: 768px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 0.5;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% else%}
+  <style>
+    @media(min-width: 768px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev,
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-next {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if size == 0 %}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 0.5;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% else%}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev,
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-next {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+      
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
   </style>
 {% endif %}
 
 {% if button_align == "center" %}
   <style>
-    @media(min-width: 1024px) {
-     .testimonials-btn-{{ section.id }} {
-        margin-left: auto;
-        margin-right: auto;
-      }  
-    }
+   .testimonials-btn-{{ section.id }} {
+      margin-left: auto;
+      margin-right: auto;
+    } 
   </style>
 {% elsif button_align == "right" %}
   <style>
-    @media(min-width: 1024px) {
-     .testimonials-btn-{{ section.id }} {
-        margin-left: auto;
-        margin-right: 0px;
-      } 
-    }
-  </style>
-{% elsif button_align == "left" %}
-  <style>
-    @media(min-width: 1024px) {
-     .testimonials-btn-{{ section.id }} {
-        margin-left: 0px;
-        margin-right: 0px;
-      } 
-    }
-  </style>
-{% endif %}
-
-{% if card_content_align_mobile == "center" %}
-  <style>
-    .testimonials-top-bar-{{ section.id }},
-    .testimonials-slide-top-{{ section.id }},
-    .testimonials-slide-bottom-bar-{{ section.id }} {
-      align-items: center;
-    }
-
-    .testimonials-slide-text-btn-{{ section.id }} {
+   .testimonials-btn-{{ section.id }} {
       margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
-{% elsif card_content_align_mobile == "right" %}
-  <style>
-    .testimonials-top-bar-{{ section.id }},
-    .testimonials-slide-top-{{ section.id }},
-    .testimonials-slide-bottom-bar-{{ section.id }} {
-      align-items: end;
-    }
-
-    .testimonials-slide-text-btn-{{ section.id }} {
-      margin-left: auto;
-    }
+    } 
   </style>
 {% endif %}
 
-{% if card_content_align == "center" %}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-top-bar-{{ section.id }},
-      .testimonials-slide-top-{{ section.id }},
-      .testimonials-slide-bottom-bar-{{ section.id }} {
-        align-items: center;
-      }
+{% comment %} PREVIEW {% endcomment %}
+<style>
+  .testimonials-slider-{{ section.id }}.preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: {{ slider_gap }}px;
+  }
 
-      .testimonials-slide-text-btn-{{ section.id }} {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  </style>
-{% elsif card_content_align == "right" %}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-top-bar-{{ section.id }},
-      .testimonials-slide-top-{{ section.id }},
-      .testimonials-slide-bottom-bar-{{ section.id }} {
-        align-items: end;
-      }
+  .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }} {
+    width: 100%;
+  }
 
-      .testimonials-slide-text-btn-{{ section.id }} {
-        margin-left: auto;
-        margin-right: 0px;
-      }
-    }
-  </style>
-{% else %}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-top-bar-{{ section.id }},
-      .testimonials-slide-top-{{ section.id }},
-      .testimonials-slide-bottom-bar-{{ section.id }} {
-        align-items: start;
-      } 
-
-      .testimonials-slide-text-btn-{{ section.id }} {
-        margin-left: 0px;
-        margin-right: 0px;
-      }
-    }
-  </style>
-{% endif %}
-
-{% if button_style == "non_outline" or button_style == "non_outline_arrow" %}
-  <style>
-    .testimonials-btn-{{ section.id }} {
-      background-color: {{ button_bg_color }};
-    }
-
-    .testimonials-btn-{{ section.id }}:hover {
-      background-color: {{ button_bg_hover_color }};
-    }
-  </style>
-{% elsif button_style == "outline" or button_style == "outline_arrow" %}
-  <style>
-    .testimonials-btn-{{ section.id }} {
-      background-color: {{ button_bg_color }};
-      border: {{ button_border_thickness }}px solid {{ button_border_color }};
-    }
-
-    .testimonials-btn-{{ section.id }}:hover {
-      background-color: {{ button_bg_hover_color }};
-      border: {{ button_border_thickness }}px solid {{ button_border_hover_color }};
-    }
-  </style>
-{% elsif button_style == "link" %}
-  <style>
-    .testimonials-btn-{{ section.id }} {
-      padding: 0px !important;
-    }
-  </style>
-{% endif %}
-
-{% if reverse_direction %}
-  <style>
-    @keyframes ticker{{ section.id | replace: '-', '' }} {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
-    }
-  </style>
-{% else %}
-  <style>
-    @keyframes ticker{{ section.id | replace: '-', '' }} {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-  </style>
-{% endif %}
-
-{% if pause_hover %}
-  <style>
-    .testimonials-scrolling-wrap-{{ section.id }}:hover .testimonials-scrolling-list-{{ section.id }} {
-       animation-play-state: paused 
-    }
-  </style>
-{% endif %}
-
-{% if card_height %}
-  <style>
-    .testimonials-scrolling-list-{{ section.id }} {
-      align-items: stretch !important;
-    }
-  </style>
-{% endif %}
-
-{% if author_image_position == "top" %}
-  <style>
-    .testimonials-slide-image-{{ section.id }} {
-      margin-bottom: 10px;
-    }
-  </style>
-{% elsif author_image_position == "bottom" %}
-  <style>
-    .testimonials-slide-image-{{ section.id }} {
-      margin-top: 10px;
-    }
-  </style>
-{% endif %}
+  .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }}:not(:first-child) {
+    margin-left: {{ slider_gap }}px;
+  }
+</style>
 
 <div class="section-{{ section.id }} testimonials-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
     <div class="section-{{ section.id }}-settings ">
@@ -921,8 +885,7 @@ For inquiries or permissions, contact daniel@section.store
           {% if stars_count != 0 %}
             <div class="testimonials-stars-{{ section.id }}">
                 {% if stars_icon != blank %}
-                  {% assign stars_count_round = stars_count | round: 0 %}
-                  {% for item in (1..stars_count_round) %}
+                  {% for item in (1..stars_count) %}
                     <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
                   {% endfor %}
                 {% else %}
@@ -1057,444 +1020,249 @@ For inquiries or permissions, contact daniel@section.store
         </div>
       {% endif %}
       <div class="testimonials-slider-wrapper-{{ section.id }}">
-        <div class="testimonials-scrolling-wrap-{{ section.id }}">
-          <div class="testimonials-scrolling-list-{{ section.id }}">
-            {% for item in (1..3) %}
-              {% for block in section.blocks %}
-                <div class="testimonials-slide-{{ section.id }}">
-                  <div class="testimonials-top-bar-{{ section.id }}">
-                    {% if author_image_position == "top" %}
-                      {% if block.settings.author_image != blank %}
-                        <div class="testimonials-slide-image-{{ section.id }}">
-                            <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        </div>
-                      {% endif %}
-                    {% endif %}
-                    <div class="testimonials-slide-top-{{ section.id }}">
-                      {% if block.settings.stars_count != 0 %}
-                        <div class="testimonials-stars-{{ section.id }}">
-                            {% if stars_icon != blank %}
-                              {% assign stars_count_round = block.settings.stars_count | round: 0 %}
-                              {% for item in (1..stars_count_round) %}
-                                <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                              {% endfor %}
-                            {% else %}
-                              {% if block.settings.stars_count > 0 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 0.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}1">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 0.5 %}url(#grad{{ section.id }}1){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
+        <div class="testimonials-slider-{{ section.id }} swiper preview">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="testimonials-slide-{{ section.id }} swiper-slide">
+                <div class="testimonials-slide-top-{{ section.id }}">
+                  {% if block.settings.stars_count != 0 %}
+                    <div class="testimonials-stars-{{ section.id }}">
+                        {% if stars_icon != blank %}
+                          {% for item in (1..block.settings.stars_count) %}
+                            <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                          {% endfor %}
+                        {% else %}
+                          {% if block.settings.stars_count > 0 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 0.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}1">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
                               {% endif %}
-                              {% if block.settings.stars_count > 1 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 1.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}2">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 1.5 %}url(#grad{{ section.id }}2){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 2 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 2.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}3">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 2.5 %}url(#grad{{ section.id }}3){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 3 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 3.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}4">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 3.5 %}url(#grad{{ section.id }}4){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 4 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 4.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}5">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 4.5 %}url(#grad{{ section.id }}5){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                                  
-                            {% endif %}
-                        </div>
-                      {% endif %}
-                      {% if block.settings.heading != blank %}
-                        <p class="testimonials-slide-heading-{{ section.id }}">{{ block.settings.heading }}</p>
-                      {% endif %}
-                      {% assign small_text = block.settings.text | truncatewords: card_count_words %}
-                      {% assign big_text = block.settings.text %}
-                      {% if block.settings.text != blank %}
-                        <p class="testimonials-slide-text-{{ section.id }}">
-                          <span>{{ block.settings.text }}</span>
-                          <span class="testimonials-slide-text-small-{{ section.id }} testimonials-slide-text-small">{{ small_text }}</span>
-                          <span class="testimonials-slide-text-big-{{ section.id }} testimonials-slide-text-big">{{ big_text }}</span>
-                          {% if small_text != big_text %}
-                          <button class="testimonials-slide-text-btn-{{ section.id }} testimonials-slide-text-btn">{{ card_text_more }}</button>
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 0.5 %}url(#grad{{ section.id }}1){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                        </p>
-                      {% endif %}
-                    </div>
-                  </div>
-                  <div class="testimonials-slide-bottom-bar-{{ section.id }}">
-                    <div class="testimonials-slide-bottom-{{ section.id }}">
-                      {% if author_image_position == "inline_text" %}
-                        {% if block.settings.author_image != blank %}
-                          <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                          {% if block.settings.stars_count > 1 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 1.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}2">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 1.5 %}url(#grad{{ section.id }}2){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                          {% endif %}
+                          {% if block.settings.stars_count > 2 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 2.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}3">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 2.5 %}url(#grad{{ section.id }}3){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                          {% endif %}
+                          {% if block.settings.stars_count > 3 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 3.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}4">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 3.5 %}url(#grad{{ section.id }}4){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                          {% endif %}
+                          {% if block.settings.stars_count > 4 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 4.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}5">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 4.5 %}url(#grad{{ section.id }}5){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                          {% endif %}
+                              
                         {% endif %}
-                      {% endif %}
-                      {% if block.settings.author_date != blank %}
-                        <p class="testimonials-slide-author-date-{{ section.id }}">{{ block.settings.author_date }}</p>
-                      {% endif %}
                     </div>
-                    {% if author_image_position == "bottom" %}
-                      {% if block.settings.author_image != blank %}
-                        <div class="testimonials-slide-image-{{ section.id }}">
-                            <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        </div>
-                      {% endif %}
-                    {% endif %}
-                  </div>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}
+                    <p class="testimonials-slide-heading-{{ section.id }}">{{ block.settings.heading }}</p>
+                  {% endif %}
+                  {% if block.settings.text != blank %}
+                    <p class="testimonials-slide-text-{{ section.id }}">
+                      <span>{{ block.settings.text }}</span>
+                      <span class="testimonials-slide-text-small-{{ section.id }} testimonials-slide-text-small">{{ block.settings.text | truncatewords: card_count_words }}</span>
+                      <span class="testimonials-slide-text-big-{{ section.id }} testimonials-slide-text-big">{{ block.settings.text }}</span>
+                      <button class="testimonials-slide-text-btn-{{ section.id }} testimonials-slide-text-btn">{{ card_text_more }}</button>
+                    </p>
+                  {% endif %}
                 </div>
-              {% endfor %}
+                <div class="testimonials-slide-bottom-{{ section.id }}">
+                  {% if block.settings.author_date != blank %}
+                    <p class="testimonials-slide-author-date-{{ section.id }}">{{ block.settings.author_date }}</p>
+                  {% endif %}
+                </div>
+              </div>
             {% endfor %}
           </div>
-          <div class="testimonials-scrolling-list-{{ section.id }}">
-            {% for item in (1..3) %}
-              {% for block in section.blocks %}
-                <div class="testimonials-slide-{{ section.id }}">
-                  <div class="testimonials-top-bar-{{ section.id }}">
-                    {% if author_image_position == "top" %}
-                      {% if block.settings.author_image != blank %}
-                        <div class="testimonials-slide-image-{{ section.id }}">
-                            <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        </div>
-                      {% endif %}
-                    {% endif %}
-                    <div class="testimonials-slide-top-{{ section.id }}">
-                      {% if block.settings.stars_count != 0 %}
-                        <div class="testimonials-stars-{{ section.id }}">
-                            {% if stars_icon != blank %}
-                              {% assign stars_count_round = block.settings.stars_count | round: 0 %}
-                              {% for item in (1..stars_count_round) %}
-                                <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                              {% endfor %}
-                            {% else %}
-                              {% if block.settings.stars_count > 0 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 0.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}1">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 0.5 %}url(#grad{{ section.id }}1){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 1 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 1.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}2">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 1.5 %}url(#grad{{ section.id }}2){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 2 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 2.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}3">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 2.5 %}url(#grad{{ section.id }}3){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 3 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 3.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}4">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 3.5 %}url(#grad{{ section.id }}4){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                              {% if block.settings.stars_count > 4 %}
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  {% if block.settings.stars_count == 4.5 %}
-                                    <defs>
-                                      <linearGradient id="grad{{ section.id }}5">
-                                        <stop offset="0%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="{{ stars_bg_color }}" />
-                                        <stop offset="50%" stop-color="#DDDDDD" />
-                                        <stop offset="100%" stop-color="#DDDDDD" />
-                                      </linearGradient>
-                                    </defs>
-                                  {% endif %}
-                                  <rect width="32" height="32" fill="{% if block.settings.stars_count == 4.5 %}url(#grad{{ section.id }}5){% else %}{{ stars_bg_color }}{% endif %}"/>
-                                  <g clip-path="url(#clip0_25_4)">
-                                  <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
-                                  </g>
-                                  <defs>
-                                  <clipPath id="clip0_25_4">
-                                  <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
-                                  </clipPath>
-                                  </defs>
-                                </svg>
-                              {% endif %}
-                                  
-                            {% endif %}
-                        </div>
-                      {% endif %}
-                      {% if block.settings.heading != blank %}
-                        <p class="testimonials-slide-heading-{{ section.id }}">{{ block.settings.heading }}</p>
-                      {% endif %}
-                      {% assign small_text = block.settings.text | truncatewords: card_count_words %}
-                      {% assign big_text = block.settings.text %}
-                      {% if block.settings.text != blank %}
-                        <p class="testimonials-slide-text-{{ section.id }}">
-                          <span>{{ block.settings.text }}</span>
-                          <span class="testimonials-slide-text-small-{{ section.id }} testimonials-slide-text-small">{{ small_text }}</span>
-                          <span class="testimonials-slide-text-big-{{ section.id }} testimonials-slide-text-big">{{ big_text }}</span>
-                          {% if small_text != big_text %}
-                          <button class="testimonials-slide-text-btn-{{ section.id }} testimonials-slide-text-btn">{{ card_text_more }}</button>
-                          {% endif %}
-                        </p>
-                      {% endif %}
-                    </div>
-                  </div>
-                  <div class="testimonials-slide-bottom-bar-{{ section.id }}">
-                    <div class="testimonials-slide-bottom-{{ section.id }}">
-                      {% if author_image_position == "inline_text" %}
-                        {% if block.settings.author_image != blank %}
-                          <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        {% endif %}
-                      {% endif %}
-                      {% if block.settings.author_date != blank %}
-                        <p class="testimonials-slide-author-date-{{ section.id }}">{{ block.settings.author_date }}</p>
-                      {% endif %}
-                    </div>
-                    {% if author_image_position == "bottom" %}
-                      {% if block.settings.author_image != blank %}
-                        <div class="testimonials-slide-image-{{ section.id }}">
-                            <img src="{{ block.settings.author_image | image_url }}" alt="{{ block.settings.author_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        </div>
-                      {% endif %}
-                    {% endif %}
-                  </div>
-                </div>
-              {% endfor %}
-            {% endfor %}
+          <div class="testimonials-btn-prev-{{ section.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="Left"><path d="M14,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L11.414,12l3.293,3.293A1,1,0,0,1,14,17Z" style="fill:#1c1b1e"/></g></svg>
           </div>
+          <div class="testimonials-btn-next-{{ section.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="Left"><path d="M14,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L11.414,12l3.293,3.293A1,1,0,0,1,14,17Z" style="fill:#1c1b1e"/></g></svg>
+          </div>
+          <div class="testimonials-pagination-{{ section.id }} swiper-pagination"></div>
         </div>
       </div>
       {% if button != blank %}
-        <a href="{{ button_url }}" class="testimonials-btn-{{ section.id }}">
-          {{ button }}
-           {% if button_style == "non_outline_arrow" or button_style == "outline_arrow" %}
-            <svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M187.827 98.7858C188.123 98.4749 188.123 98.4749 188.123 98.1761C188.419 97.8652 188.419 97.5663 188.704 97.5663C189 96.9566 189 96.6458 189 96.0361C189 95.4263 189 94.8166 188.704 94.5058C188.704 94.195 188.408 93.8961 188.123 93.5852C188.123 93.2744 187.827 93.2744 187.827 92.9755L103.287 4.21945C102.41 3.29889 101.533 3 100.668 3C99.791 3 98.6295 3.31083 98.0488 4.21945C97.1719 5.14 96.8872 6.06058 96.8872 6.96919C96.8872 7.88974 97.1833 9.10918 98.0488 9.7189L175.587 92.0539H6.79206C4.75371 92.0539 3 93.895 3 96.0351C3 98.1751 4.75365 100.016 6.79206 100.016H175.575L97.7543 182.042C96.2967 183.572 96.2967 186.322 97.7543 187.852C99.2119 189.383 101.831 189.383 103.288 187.852L187.827 98.7858Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M188.607 97.5657C188.432 97.5657 188.365 97.6788 188.27 97.8382C188.211 97.9378 188.141 98.0554 188.027 98.1748C188.027 98.4734 188.027 98.4734 187.731 98.7839L103.281 187.759C101.825 189.287 99.2085 189.287 97.7524 187.759C96.2963 186.23 96.2963 183.483 97.7524 181.954L175.492 100.013L6.88489 100.013C4.8486 100.013 3.09677 98.1739 3.09677 96.036C3.09677 93.8982 4.84866 92.059 6.88489 92.059L175.504 92.059L98.0465 9.80878C97.182 9.19968 96.8862 7.9815 96.8862 7.0619C96.8862 6.15422 97.1706 5.2346 98.0465 4.315C98.6267 3.40732 99.787 3.0968 100.663 3.0968C101.527 3.0968 102.403 3.39539 103.279 4.315L187.731 92.9796C187.731 93.1274 187.804 93.2021 187.877 93.2774C187.952 93.3543 188.027 93.4319 188.027 93.5887C188.046 93.6098 188.066 93.6308 188.085 93.6518C188.338 93.9267 188.584 94.1935 188.606 94.4689C188.607 94.482 188.607 94.4951 188.607 94.5083C188.903 94.8188 188.903 95.4279 188.903 96.037C188.903 96.6461 188.903 96.9566 188.607 97.5657ZM191.489 93.2767C191.79 93.8661 191.89 94.4204 191.934 94.7363C192.001 95.2226 192 95.7194 192 95.9856L192 96.037C192 96.0544 192 96.0729 192 96.0926C192 96.3523 192.001 96.8096 191.924 97.2931C191.828 97.8884 191.64 98.41 191.393 98.9184L190.546 100.663H190.212C190.127 100.759 190.038 100.852 189.988 100.905L189.974 100.92L105.527 189.891C102.85 192.701 98.1865 192.704 95.51 189.895C94.1476 188.464 93.5636 186.587 93.5636 184.857C93.5636 183.128 94.1468 181.252 95.5071 179.822M191.489 93.2767C191.316 92.7908 191.078 92.4357 190.938 92.2406C190.903 92.1912 190.866 92.142 190.828 92.0939V91.7408L105.522 2.17912C104.076 0.661813 102.397 0 100.663 0C99.3914 0 97.0569 0.401401 95.6212 2.37737C94.3151 3.83819 93.7895 5.45521 93.7895 7.0619C93.7895 8.26663 94.1183 10.6061 95.9608 12.111L168.333 88.9622L6.88489 88.9622C2.9981 88.9622 0 92.3316 0 96.036C0 99.7405 2.99801 103.11 6.88489 103.11L168.285 103.11" fill="black"></path>
-              <path d="M169.5 104L16.5 102.5V90H171L97.5 10.5V7L107.5 4.5C131.167 29.6667 180.2 81.5 187 87.5C193.8 93.5 191.5 99 189.5 101L105.5 184L94 181.5L169.5 104Z" fill="black"></path>
-            </svg>
-          {% endif %}
-        </a>
+        <a href="{{ button_url }}" class="testimonials-btn-{{ section.id }}">{{ button }}</a>
       {% endif %}
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+              
 <script>
-  function initTestimonials16{{ section.id | replace: '-', '' }}() {
-
+  function initTestimonials8{{ section.id | replace: '-', '' }}() {
+    document.querySelector('.testimonials-slider-{{ section.id }}').classList.remove('preview');
+    const slider = new Swiper('.testimonials-slider-{{ section.id }}', {
+      speed: 300,
+      loop: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.testimonials-btn-next-{{ section.id }}',
+        prevEl: '.testimonials-btn-prev-{{ section.id }}'
+      },
+      pagination: {
+        el: '.testimonials-pagination-{{ section.id }}',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          centeredSlides: true,
+          spaceBetween: {{ slider_gap_mobile }},
+          slidesPerView: {{ slider_view_mobile }}
+        },
+        768: {
+          centeredSlides: {% if size_tablet == 0 %}false{% else %}true{% endif %},
+          spaceBetween: {{ slider_gap_mobile }},
+          slidesPerView: {{ slider_view | times: 0.5 | round: 0 }}
+        },
+        1024: {
+          centeredSlides: {% if size == 0 %}false{% else %}true{% endif %},
+          spaceBetween: {{ slider_gap }},
+          slidesPerView: {{ slider_view }}
+        }
+      }
+    })
+    // slider.slidePrev();
     let texts = document.querySelectorAll('.testimonials-slide-text-{{ section.id }}');
     texts.forEach(el => {
       let btn = el.querySelector('.testimonials-slide-text-btn');
       let small = el.querySelector('.testimonials-slide-text-small');
       let big = el.querySelector('.testimonials-slide-text-big');
-      if(btn) {
-        btn.addEventListener('click', () => {
-          if(btn.classList.contains("active")) {
-            small.classList.remove('active');
-            big.classList.remove('active');
-            btn.classList.remove('active');
-            btn.textContent = "{{ card_text_more }}";
-          } else {
-            small.classList.add('active');
-            big.classList.add('active');
-            btn.textContent = "{{ card_text_less }}";
-            btn.classList.add('active');
-          }
-        }) 
-      }
+      btn.addEventListener('click', () => {
+        console.log(btn);
+        if(btn.classList.contains("active")) {
+          small.classList.remove('active');
+          big.classList.remove('active');
+          btn.classList.remove('active');
+          btn.textContent = "{{ card_text_more }}";
+        } else {
+          small.classList.add('active');
+          big.classList.add('active');
+          btn.textContent = "{{ card_text_less }}";
+          btn.classList.add('active');
+        }
+      })
     })
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(initTestimonials16{{ section.id | replace: '-', '' }}, 500);
+    setTimeout(initTestimonials8{{ section.id | replace: '-', '' }}, 500);
   });
   
   if (Shopify.designMode) {
-     document.addEventListener('shopify:section:unload', initTestimonials16{{ section.id | replace: '-', '' }});
-     document.addEventListener('shopify:section:load', initTestimonials16{{ section.id | replace: '-', '' }});
+     document.addEventListener('shopify:section:unload', initTestimonials8{{ section.id | replace: '-', '' }});
+     document.addEventListener('shopify:section:load', initTestimonials8{{ section.id | replace: '-', '' }});
   }
   
 </script>
-                                  
+
 {% schema %}
   {
-    "name": "SS - Testimonial #16",
+    "name": "SS - Testimonial #8",
     "settings": [
       {
-        "type": "paragraph",
-        "content": "Att: Save settings to view updates"
-      },
-      {
         "type": "header",
-        "content": "Content settings"
-      },
-      {
-        "type": "text_alignment",
-        "id": "content_align",
-        "label": "Alignment",
-        "default": "center"
-      },
-      {
-        "type": "text_alignment",
-        "id": "content_align_mobile",
-        "label": "Alignment - mobile",
-        "default": "center"
+        "content": "ATT: Save editor before slider works"
       },
       {
         "type": "header",
@@ -1509,13 +1277,13 @@ For inquiries or permissions, contact daniel@section.store
       {
         "type": "checkbox",
         "id": "heading_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "heading_font",
-        "label": "Font family",
+        "label": "Heading Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -1525,7 +1293,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Heading Size",
         "default": 40
       },
       {
@@ -1535,7 +1303,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Heading Size - Mobile",
         "default": 24
       },
       {
@@ -1545,29 +1313,49 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Heading Line Height",
         "default": 130
       },
       {
+        "type": "select",
+        "id": "heading_align",
+        "label": "Heading Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
         "type": "header",
-        "content": "Rating text"
+        "content": "Rating Text"
       },
       {
         "type": "text",
         "id": "rating_text",
-        "label": "Text",
+        "label": "Rating Text",
         "default": "Excellent"
       },
       {
         "type": "checkbox",
         "id": "rating_text_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "rating_text_font",
-        "label": "Font family",
+        "label": "Rating Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -1577,7 +1365,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Rating Text Size",
         "default": 24
       },
       {
@@ -1587,7 +1375,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Rating Text Size - Mobile",
         "default": 20
       },
       {
@@ -1597,7 +1385,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Rating Text Line Height",
         "default": 130
       },
       {
@@ -1607,22 +1395,12 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "rating_text_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
+        "label": "Rating Text Margin Top",
         "default": 16
       },
       {
         "type": "header",
-        "content": "Rating settings"
+        "content": "Rating Settings"
       },
       {
         "type": "range",
@@ -1636,22 +1414,42 @@ For inquiries or permissions, contact daniel@section.store
       {
         "type": "checkbox",
         "id": "rating_hide",
-        "label": "Rating hide",
+        "label": "Rating Hide",
         "default": false
       },
       {
         "type": "checkbox",
         "id": "rating_text_hide",
-        "label": "Rating text hide",
+        "label": "Rating Text Hide",
         "default": false
       },
       {
+        "type": "select",
+        "id": "rating_align",
+        "label": "Rating Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
+      },
+      {
         "type": "header",
-        "content": "Stars settings"
+        "content": "Stars Settings"
       },
       {
         "type": "image_picker",
-        "label": "Stars icon",
+        "label": "Stars Icon",
         "id": "stars_icon",
         "info": "Replaces the default stars icon"
       },
@@ -1661,7 +1459,7 @@ For inquiries or permissions, contact daniel@section.store
         "min": 0,
         "max": 5,
         "step": 0.5,
-        "label": "Count",
+        "label": "Stars Count",
         "default": 5
       },
       {
@@ -1670,8 +1468,7 @@ For inquiries or permissions, contact daniel@section.store
         "min": 10,
         "max": 100,
         "step": 2,
-        "unit": "px",
-        "label": "Size",
+        "label": "Stars Size",
         "default": 28
       },
       {
@@ -1680,9 +1477,28 @@ For inquiries or permissions, contact daniel@section.store
         "min": 10,
         "max": 100,
         "step": 2,
-        "unit": "px",
-        "label": "Size - mobile",
+        "label": "Stars Size - Mobile",
         "default": 24
+      },
+      {
+        "type": "select",
+        "id": "stars_align",
+        "label": "Stars Align on Card",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
       },
       {
         "type": "header",
@@ -1693,23 +1509,23 @@ For inquiries or permissions, contact daniel@section.store
         "id": "text",
         "label": "Text",
         "default": "<p>based on <strong>1 067</strong> reviews</p>",
-        "info": "Use ‘Bold' for underline text",
+        "info": "Use 'Strong' for underline text"
       },
       {
         "type": "image_picker",
-        "label": "Right image",
+        "label": "Text Right Image",
         "id": "text_right_image"
       },
       {
         "type": "checkbox",
         "id": "text_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "text_font",
-        "label": "Font family",
+        "label": "Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -1719,7 +1535,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Text Size",
         "default": 20
       },
       {
@@ -1729,7 +1545,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Text Size - Mobile",
         "default": 16
       },
       {
@@ -1739,8 +1555,28 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Text Line Height",
         "default": 130
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
       },
       {
         "type": "range",
@@ -1749,118 +1585,74 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "text_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
+        "label": "Text Margin Top",
         "default": 16
       },
       {
         "type": "header",
-        "content": "Scrolling settings",
-         "info": "The theme editor may display incorrect scrolling speed; please verify on the live site."
+        "content": "Slider Settings"
       },
       {
         "type": "range",
-        "id": "scrolling_velocity",
-        "min": 10,
-        "max": 150,
+        "id": "slider_width",
+        "min": 0,
+        "max": 100,
         "step": 2,
-        "label": "Speed",
-        "info": "⚡ <----------------> 🐌",
+        "unit": "%",
+        "label": "Slider Width - Desktop",
         "default": 80
       },
       {
         "type": "range",
-        "id": "scrolling_velocity_mobile",
-        "min": 10,
-        "max": 150,
-        "step": 2,
-        "label": "Speed mobile",
-        "info": "⚡ <----------------> 🐌",
-        "default": 100
-      },
-       {
-        "type": "checkbox",
-        "id": "reverse_direction",
-        "label": "Reverse scrolling direction"
-      },
-      {
-        "type": "checkbox",
-        "id": "pause_hover",
-        "label": "Pause on hover",
-        "default": true
+        "id": "slider_view",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "label": "Slides Per View",
+        "default": 3
       },
       {
         "type": "range",
-        "id": "scrolling_mt",
+        "id": "slider_view_mobile",
+        "min": 1,
+        "max": 3,
+        "step": 0.2,
+        "label": "Slides Per View - Mobile",
+        "default": 1.2
+      },
+      {
+        "type": "range",
+        "id": "slider_gap",
         "min": 0,
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 36
-      },
-      {
-        "type": "range",
-        "id": "scrolling_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
-        "default": 36
-      },
-      {
-        "type": "range",
-        "id": "scrolling_gap",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Gap",
+        "label": "Slider Gap",
         "default": 20
       },
       {
         "type": "range",
-        "id": "scrolling_gap_mobile",
+        "id": "slider_gap_mobile",
         "min": 0,
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Gap - mobile",
+        "label": "Slider Gap - Mobile",
         "default": 20
+      },
+      {
+        "type": "range",
+        "id": "slider_mt",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Slider Margin Top",
+        "default": 36
       },
       {
         "type": "header",
-        "content": "Card settings"
-      },
-      {
-        "type": "range",
-        "id": "card_width",
-        "min": 100,
-        "max": 600,
-        "step": 10,
-        "unit": "px",
-        "label": "Width",
-        "default": 360
-      },
-      {
-        "type": "range",
-        "id": "card_width_mobile",
-        "min": 100,
-        "max": 500,
-        "step": 10,
-        "unit": "px",
-        "label": "Width - mobile",
-        "default": 280
+        "content": "Card Settings"
       },
       {
         "type": "range",
@@ -1869,8 +1661,8 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 2,
         "unit": "px",
-        "label": "Padding vertical",
-        "default": 36
+        "label": "Card Padding Vertical",
+        "default": 32
       },
       {
         "type": "range",
@@ -1879,8 +1671,8 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 2,
         "unit": "px",
-        "label": "Padding vertical - mobile",
-        "default": 28
+        "label": "Card Padding Vertical - Mobile",
+        "default": 24
       },
       {
          "type": "range",
@@ -1889,7 +1681,7 @@ For inquiries or permissions, contact daniel@section.store
          "max": 100,
          "step": 2,
          "unit": "px",
-         "label": "Padding horizontal",
+         "label": "Card Padding Horizontal",
          "default": 40
       },
       {
@@ -1899,7 +1691,7 @@ For inquiries or permissions, contact daniel@section.store
          "max": 100,
          "step": 2,
          "unit": "px",
-         "label": "Padding horizontal - mobile",
+         "label": "Card Padding Horizontal - Mobile",
          "default": 24
       },
       {
@@ -1909,7 +1701,7 @@ For inquiries or permissions, contact daniel@section.store
          "max": 100,
          "step": 2,
          "unit": "px",
-         "label": "Roundness",
+         "label": "Card Border Radius",
          "default": 16
       },
       {
@@ -1919,68 +1711,29 @@ For inquiries or permissions, contact daniel@section.store
          "max": 10,
          "step": 1,
          "unit": "px",
-         "label": "Border thickness",
+         "label": "Card Border Thickness",
          "default": 0
       },
       {
-        "type": "select",
-        "id": "card_shadow_style",
-        "label": "Shadow Style",
-        "default": "2",
-        "options": [
-          {
-            "label": "Style 1",
-            "value": "1"
-          },
-          {
-            "label": "Style 2",
-            "value": "2"
-          },
-          {
-            "label": "Style 3",
-            "value": "3"
-          },
-          {
-            "label": "Style 4",
-            "value": "4"
-          },
-          {
-            "label": "None",
-            "value": "none"
-          }
-        ]
-      },
-      {
-        "type": "text_alignment",
-        "id": "card_content_align",
-        "label": "Content alignment",
-        "default": "center"
-      },
-      {
-        "type": "text_alignment",
-        "id": "card_content_align_mobile",
-        "label": "Content alignment - mobile",
-        "default": "center"
-      },
-      {
         "type": "checkbox",
-        "id": "card_height",
-        "label": "Cards same height"
+        "id": "card_shadow",
+        "label": "Use Card Shadow",
+        "default": true
       },
       {
         "type": "header",
-        "content": "Card heading"
+        "content": "Card Heading"
       },
       {
         "type": "checkbox",
         "id": "card_heading_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "card_heading_font",
-        "label": "Font family",
+        "label": "Card Heading Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -1990,7 +1743,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Card Heading Size",
         "default": 24
       },
       {
@@ -2000,7 +1753,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Card Heading Size - Mobile",
         "default": 20
       },
       {
@@ -2010,8 +1763,28 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Card Heading Line Height",
         "default": 130
+      },
+      {
+        "type": "select",
+        "id": "card_heading_align",
+        "label": "Card Heading Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "range",
@@ -2020,33 +1793,23 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "card_heading_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
+        "label": "Card Heading Margin Top",
         "default": 16
       },
       {
         "type": "header",
-        "content": "Card text"
+        "content": "Card Text"
       },
       {
         "type": "checkbox",
         "id": "card_text_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "card_text_font",
-        "label": "Font family",
+        "label": "Card Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -2056,7 +1819,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Card Text Size",
         "default": 14
       },
       {
@@ -2066,7 +1829,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Card Text Size - Mobile",
         "default": 14
       },
       {
@@ -2076,8 +1839,28 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Card Text Line Height",
         "default": 150
+      },
+      {
+        "type": "select",
+        "id": "card_text_align",
+        "label": "Card Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "range",
@@ -2086,99 +1869,44 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "card_text_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
+        "label": "Card Text Margin Top",
         "default": 16
       },
       {
         "type": "text",
         "id": "card_text_more",
-        "label": "View more text",
+        "label": "Card Text More",
         "default": "View More"
       },
       {
         "type": "text",
         "id": "card_text_less",
-        "label": "View less text",
+        "label": "Card Text Less",
         "default": "View Less"
       },
       {
         "type": "range",
         "id": "card_count_words",
         "min": 5,
-        "max": 80,
+        "max": 40,
         "step": 1,
-        "label": "Words before 'View more' button",
-        "default": 60,
-        "info": "The 'View more' button will be displayed on the mobile version."
+        "label": "Count Words Before 'More Button'",
+        "default": 20
       },
       {
         "type": "header",
-        "content": "Card author image settings"
-      },
-       {
-        "type": "range",
-        "id": "author_image_size",
-        "min": 40,
-        "max": 200,
-        "step": 2,
-        "unit": "px",
-        "label": "Size",
-        "default": 56
-      },
-      {
-        "type": "range",
-        "id": "author_image_size_mobile",
-        "min": 40,
-        "max": 200,
-        "step": 2,
-        "unit": "px",
-        "label": "Size - mobile",
-        "default": 40
-      },
-      {
-        "type": "select",
-        "id": "author_image_position",
-        "label": "Position",
-        "default": "inline_text",
-        "options": [
-          {
-            "label": "Top",
-            "value": "top"
-          },
-          {
-            "label": "In line with author-date text",
-            "value": "inline_text"
-          },
-          {
-            "label": "Bottom",
-            "value": "bottom"
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Card author-date text settings"
+        "content": "Card Author-Date Text"
       },
       {
         "type": "checkbox",
         "id": "card_author_date_text_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "card_author_date_text_font",
-        "label": "Font family",
+        "label": "Card Author-Date Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -2188,7 +1916,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Card Author-Date Text Size",
         "default": 16
       },
       {
@@ -2198,7 +1926,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Card Author-Date Text Size - Mobile",
         "default": 16
       },
       {
@@ -2208,8 +1936,28 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Card Author-Date Text Line Height",
         "default": 130
+      },
+      {
+        "type": "select",
+        "id": "card_author_date_text_align",
+        "label": "Card Author-Date Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "range",
@@ -2218,44 +1966,136 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "card_author_date_text_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
+        "label": "Card Author-Date Text Margin Top",
         "default": 16
       },
       {
         "type": "header",
-        "content": "Button settings"
+        "content": "Arrow Settings"
+      },
+      {
+        "type": "range",
+        "id": "arrow_size",
+        "min": 10,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Size",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "arrow_size_mobile",
+        "min": 10,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Size - Mobile",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "arrow_icon_size",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Icon Size",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "arrow_icon_size_mobile",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Icon Size - Mobile",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "arrow_border_thickness",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Arrow Border Thickness",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "arrow_show_desktop",
+        "label": "Show on Desktop",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "arrow_show_mobile",
+        "label": "Show on Mobile",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Dots Settings"
+      },
+      {
+        "type": "range",
+        "id": "dots_size",
+        "min": 5,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Dots Size",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "dots_size_mobile",
+        "min": 5,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Dots Size - Mobile",
+        "default": 12
+      },
+      {
+        "type": "checkbox",
+        "id": "dots_show_desktop",
+        "label": "Show on Desktop",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "dots_show_mobile",
+        "label": "Show on Mobile",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Button"
       },
       {
         "type": "text",
         "id": "button",
-        "label": "Text",
+        "label": "Button",
         "default": "View All"
       },
       {
         "type": "url",
         "id": "button_url",
-        "label": "URL"
+        "label": "Button URL"
       },
       {
         "type": "checkbox",
         "id": "button_custom",
-        "label": "Use custom font",
+        "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
         "id": "button_font",
-        "label": "Font family",
+        "label": "Button Font Family",
         "default": "josefin_sans_n4"
       },
       {
@@ -2265,7 +2105,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size",
+        "label": "Button Size",
         "default": 16
       },
       {
@@ -2275,7 +2115,7 @@ For inquiries or permissions, contact daniel@section.store
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Font size - mobile",
+        "label": "Button Size - Mobile",
         "default": 14
       },
       {
@@ -2285,20 +2125,28 @@ For inquiries or permissions, contact daniel@section.store
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Line height",
+        "label": "Button Line Height",
         "default": 100
       },
       {
-        "type": "text_alignment",
+        "type": "select",
         "id": "button_align",
-        "label": "Alignment",
-        "default": "center"
-      },
-      {
-        "type": "text_alignment",
-        "id": "button_align_mobile",
-        "label": "Alignment - mobile",
-        "default": "center"
+        "label": "Button Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "range",
@@ -2307,18 +2155,8 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Margin top",
-        "default": 32
-      },
-      {
-        "type": "range",
-        "id": "button_mt_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top - mobile",
-        "default": 28
+        "label": "Button Margin Top",
+        "default": 16
       },
       {
         "type": "range",
@@ -2327,18 +2165,8 @@ For inquiries or permissions, contact daniel@section.store
         "max": 100,
         "step": 4,
         "unit": "px",
-        "label": "Padding vertical",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "button_padding_vertical_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Padding vertical - mobile",
-        "default": 16
+        "label": "Button Padding Vertical",
+        "default": 20
       },
       {
          "type": "range",
@@ -2347,18 +2175,8 @@ For inquiries or permissions, contact daniel@section.store
          "max": 100,
          "step": 4,
          "unit": "px",
-         "label": "Padding horizontal",
-         "default": 20
-      },
-      {
-         "type": "range",
-         "id": "button_padding_horizontal_mobile",
-         "min": 0,
-         "max": 100,
-         "step": 4,
-         "unit": "px",
-         "label": "Padding horizontal - mobile",
-         "default": 20
+         "label": "Button Padding Horizontal",
+         "default": 16
       },
       {
          "type": "range",
@@ -2367,7 +2185,7 @@ For inquiries or permissions, contact daniel@section.store
          "max": 100,
          "step": 2,
          "unit": "px",
-         "label": "Roundness",
+         "label": "Button Border Radius",
          "default": 8
       },
       {
@@ -2377,148 +2195,166 @@ For inquiries or permissions, contact daniel@section.store
          "max": 10,
          "step": 1,
          "unit": "px",
-         "label": "Border thickness",
-         "default": 1
-      },
-      {
-        "type": "select",
-        "id": "button_style",
-        "label": "Button style",
-        "default": "outline",
-        "options": [
-          {
-            "label": "Link",
-            "value": "link"
-          },
-          {
-            "label": "Non-outline",
-            "value": "non_outline"
-          },
-          {
-            "label": "Non-outline & arrow",
-            "value": "non_outline_arrow"
-          },
-          {
-            "label": "Outline",
-            "value": "outline"
-          },
-          {
-            "label": "Outline & arrow",
-            "value": "outline_arrow"
-          }
-        ]
+         "label": "Button Border Thickness",
+         "default": 0
       },
       {
         "type": "header",
-        "content": "Button colors"
+        "content": "Button Colors"
       },
       {
         "type": "color",
-        "label": "Text",
+        "label": "Button Color",
         "id": "button_color",
         "default": "#FFFFFF"
       },
       {
         "type": "color",
-        "label": "Text hover",
+        "label": "Button Hover Color",
         "id": "button_hover_color",
-        "default": "#000000"
+        "default": "#FFFFFF"
       },
       {
         "type": "color",
-        "label": "Background",
+        "label": "Button Background Color",
         "id": "button_bg_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Background hover",
+        "label": "Button Background Hover Color",
         "id": "button_bg_hover_color",
-        "default": "#FFFFFF"
+        "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Button border",
+        "label": "Button Border Color",
         "id": "button_border_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Border hover",
+        "label": "Button Border Hover Color",
         "id": "button_border_hover_color",
         "default": "#000000"
       },
       {
         "type": "header",
-        "content": "Card colors"
+        "content": "Card Colors"
       },
       {
         "type": "color",
-        "label": "Background color",
+        "label": "Card Background Color",
         "id": "card_bg_color",
         "default": "#FFFFFF"
       },
       {
         "type": "color",
-        "label": "Border color",
+        "label": "Card Border Color",
         "id": "card_border_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Heading color",
+        "label": "Card Shadow Color",
+        "id": "card_shadow_color",
+        "default": "#00B67A"
+      },
+      {
+        "type": "color",
+        "label": "Card Heading Color",
         "id": "card_heading_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Text color",
+        "label": "Card Text Color",
         "id": "card_text_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Author-date text color",
+        "label": "Card Author-Date Text Color",
         "id": "card_author_date_text_color",
         "default": "#000000"
       },
       {
+        "type": "header",
+        "content": "Navigation Colors"
+      },
+      {
         "type": "color",
-        "label": "Button view color",
-        "id": "view_color",
+        "label": "Arrow color",
+        "id": "arrow_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Hover color",
+        "id": "arrow_hover_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Background color",
+        "id": "arrow_bg_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Background Hover color",
+        "id": "arrow_bg_hover_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Border color",
+        "id": "arrow_border_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Border Hover color",
+        "id": "arrow_border_hover_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Dots Color",
+        "id": "dots_color",
         "default": "#000000"
       },
       {
         "type": "header",
-        "content": "Section colors"
+        "content": "Section Colors"
       },
       {
         "type": "color",
-        "label": "Heading color",
+        "label": "Heading Color",
         "id": "heading_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Rating text color",
+        "label": "Rating Text Color",
         "id": "rating_text_color",
         "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Default stars background color",
+        "label": "Default Stars Background Color",
         "id": "stars_bg_color",
         "default": "#00B67A"
       },
       {
         "type": "color",
-        "label": "Default stars color",
+        "label": "Default Stars Color",
         "id": "stars_color",
         "default": "#FFFFFF"
       },
       {
         "type": "color",
-        "label": "Text color",
+        "label": "Text Color",
         "id": "text_color",
         "default": "#000000"
       },
@@ -2610,12 +2446,12 @@ For inquiries or permissions, contact daniel@section.store
       },
       {
         "type": "header",
-        "content": "Section settings"
+        "content": "Section Settings"
       },
       {
         "type": "checkbox",
         "id": "full_width",
-        "label": "Full width",
+        "label": "Full Width",
         "default": true
       },
       {
@@ -2648,8 +2484,8 @@ For inquiries or permissions, contact daniel@section.store
     ],
     "blocks": [
       {
-        "type": "item",
-        "name": "Item",
+        "type": "slide",
+        "name": "Slide",
         "settings": [
           {
             "type": "range",
@@ -2657,7 +2493,7 @@ For inquiries or permissions, contact daniel@section.store
             "min": 0,
             "max": 5,
             "step": 0.5,
-            "label": "Stars count",
+            "label": "Stars Count",
             "default": 5
           },
           {
@@ -2673,22 +2509,17 @@ For inquiries or permissions, contact daniel@section.store
           {
             "type": "text",
             "id": "author_date",
-            "label": "Author and date"
-          },
-          {
-            "type": "image_picker",
-            "id": "author_image",
-            "label": "Author image"
+            "label": "Author and Date"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "SS - Testimonial #16",
+        "name": "SS - Testimonial #8",
         "blocks": [
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
@@ -2696,7 +2527,7 @@ For inquiries or permissions, contact daniel@section.store
             }
           },
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
@@ -2704,7 +2535,7 @@ For inquiries or permissions, contact daniel@section.store
             }
           },
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
@@ -2712,7 +2543,7 @@ For inquiries or permissions, contact daniel@section.store
             }
           },
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
@@ -2720,7 +2551,7 @@ For inquiries or permissions, contact daniel@section.store
             }
           },
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
@@ -2728,7 +2559,7 @@ For inquiries or permissions, contact daniel@section.store
             }
           },
           {
-            "type": "item",
+            "type": "slide",
             "settings": {
               "heading": "I love it! 😍",
               "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
